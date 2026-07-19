@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#63192A">
+  <meta name="robots" content="noindex, nofollow">
+  <title>TERRAZ — قريباً</title>
+  <meta name="description" content="TERRAZ is coming soon.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2363192A'/%3E%3Cpath d='M16 17h32v8H36v22h-8V25H16z' fill='%23FBFCE9'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --burgundy: #63192A;
+      --burgundy-dark: #521324;
+      --cream: #FBFCE9;
+      --paper: #F7F3EF;
+      --line: #E9E1DB;
+      --ink: #2B2523;
+      --gold: #B9975B;
+    }
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; margin: 0; }
+    body {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 15% 18%, rgba(185,151,91,.13), transparent 28rem),
+        radial-gradient(circle at 85% 82%, rgba(99,25,42,.08), transparent 26rem),
+        var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      padding: 24px;
+    }
+    .shell {
+      position: relative;
+      width: min(920px, 100%);
+      min-height: min(660px, calc(100svh - 48px));
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      background: rgba(251, 252, 233, .72);
+      box-shadow: 0 30px 80px rgba(82, 19, 36, .09);
+      isolation: isolate;
+    }
+    .shell::before, .shell::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      border-radius: 50%;
+    }
+    .shell::before {
+      width: 360px;
+      height: 360px;
+      top: -170px;
+      left: -130px;
+      border: 52px solid rgba(99, 25, 42, .055);
+    }
+    .shell::after {
+      width: 300px;
+      height: 300px;
+      right: -120px;
+      bottom: -150px;
+      border: 42px solid rgba(185, 151, 91, .09);
+    }
+    main {
+      width: min(640px, 100%);
+      text-align: center;
+      padding: 56px 28px;
+    }
+    .wordmark {
+      margin: 0;
+      color: var(--burgundy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(46px, 10vw, 88px);
+      font-weight: 500;
+      letter-spacing: .16em;
+      line-height: .95;
+      transform: translateX(.08em);
+    }
+    .rule {
+      width: 54px;
+      height: 2px;
+      margin: 26px auto 28px;
+      border-radius: 999px;
+      background: var(--burgundy);
+    }
+    .arabic {
+      margin: 0;
+      color: var(--burgundy-dark);
+      font-size: clamp(30px, 6vw, 52px);
+      font-weight: 650;
+      letter-spacing: -.025em;
+    }
+    .arabic-sub {
+      max-width: 520px;
+      margin: 18px auto 0;
+      font-size: clamp(16px, 2.7vw, 20px);
+      line-height: 1.9;
+      color: rgba(43, 37, 35, .78);
+    }
+    .english {
+      margin: 26px 0 0;
+      color: var(--burgundy);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 38px;
+      padding: 11px 18px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(247, 243, 239, .82);
+      color: var(--ink);
+      font-size: 14px;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--burgundy);
+      box-shadow: 0 0 0 6px rgba(99, 25, 42, .09);
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+    footer {
+      position: absolute;
+      right: 0;
+      bottom: 22px;
+      left: 0;
+      color: rgba(43, 37, 35, .48);
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: .08em;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(.9); opacity: .65; }
+      50% { transform: scale(1.08); opacity: 1; }
+    }
+    @media (max-width: 560px) {
+      body { padding: 14px; }
+      .shell {
+        min-height: calc(100svh - 28px);
+        border-radius: 24px;
+      }
+      main { padding: 42px 22px 72px; }
+      .wordmark { letter-spacing: .12em; }
+      .arabic-sub { line-height: 1.75; }
+      footer { bottom: 18px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .dot { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <section class="shell" aria-label="TERRAZ coming soon">
+    <main>
+      <h1 class="wordmark">TERRAZ</h1>
+      <div class="rule" aria-hidden="true"></div>
+      <p class="arabic">قريباً</p>
+      <p class="arabic-sub">
+        نجهّز لكم تجربة تسوّق مختارة بعناية.<br>
+        ترقّبوا إطلاق طراز قريباً.
+      </p>
+      <p class="english" dir="ltr">A curated shopping experience is coming soon</p>
+      <div class="status">
+        <span class="dot" aria-hidden="true"></span>
+        <span>نعمل على التجهيز</span>
+      </div>
+    </main>
+    <footer dir="ltr">© TERRAZ</footer>
+  </section>
+</body>
+</html>
