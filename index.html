@@ -1,88 +1,104 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#F0E4E6">
-  <meta name="description" content="طراز — قريباً">
-  <title>طراز | Coming Soon</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --maroon: #63192A;
-      --background: #F0E4E6;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      min-height: 100%;
-      margin: 0;
-    }
-
-    body {
-      min-height: 100svh;
-      background: var(--background);
-      color: var(--maroon);
-      font-family: Georgia, "Times New Roman", serif;
-    }
-
-    .page {
-      min-height: 100svh;
-      display: grid;
-      place-items: center;
-      padding: 32px 20px;
-      text-align: center;
-    }
-
-    .content {
-      width: min(680px, 100%);
-    }
-
-    .logo {
-      display: block;
-      width: clamp(170px, 30vw, 285px);
-      height: auto;
-      margin: 0 auto 30px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(30px, 5vw, 52px);
-      font-weight: 400;
-      line-height: 1.2;
-      letter-spacing: 0.03em;
-    }
-
-    .arabic {
-      margin: 14px 0 0;
-      font-family: Tahoma, Arial, sans-serif;
-      font-size: clamp(24px, 4vw, 38px);
-      font-weight: 400;
-      line-height: 1.4;
-    }
-
-    @media (max-width: 480px) {
-      .page {
-        padding-inline: 18px;
-      }
-
-      .logo {
-        margin-bottom: 24px;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#F7F1E7">
+  <meta name="description" content="TERRAZ — a refined destination for modest fashion.">
+  <title>TERRAZ | Modest Elegance</title>
+  <link rel="icon" href="assets/terraz-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <main class="page">
-    <section class="content" aria-labelledby="coming-soon-title">
-      <img class="logo" src="assets/terraz-logo.png" alt="طراز terraz">
-      <h1 id="coming-soon-title" dir="ltr">Coming Soon</h1>
-      <p class="arabic">قريباً</p>
+<body data-scene="0">
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="mark" href="#top" aria-label="TERRAZ home"><img src="assets/terraz-logo.png" alt="TERRAZ"></a>
+    <nav><a href="#story" data-i18n="nav_story">Story</a><a href="#app" data-i18n="nav_app">App</a><a href="https://partners.tryterraz.com/" data-i18n="nav_partners">Partners</a></nav>
+    <div class="header-actions"><button class="lang" type="button" data-lang>عربي</button><a class="download-mini" href="https://apps.apple.com/us/app/terraz/id6785586373?l" target="_blank" rel="noopener" data-i18n="download">Download</a></div>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <div class="intro-copy">
+        <span class="kicker" data-i18n="kicker">CURATED IN KUWAIT</span>
+        <h1><span data-i18n="hero_1">A new chapter</span><br><em data-i18n="hero_2">of modest elegance.</em></h1>
+        <p data-i18n="hero_body">TERRAZ brings selected stores and considered pieces into one refined mobile destination.</p>
+        <div class="intro-actions">
+          <a class="appstore" href="https://apps.apple.com/us/app/terraz/id6785586373?l" target="_blank" rel="noopener"><span class="apple"></span><span><small>Download on the</small><b>App Store</b></span></a>
+          <a class="text-link" href="#story"><span data-i18n="discover">Discover TERRAZ</span><i>↘</i></a>
+        </div>
+      </div>      <div class="intro-media">
+        <div class="portrait-shell"><img src="assets/editorial/product-01.webp" alt="TERRAZ maroon abaya"></div>
+        <div class="intro-phone phone-shell"><div class="island"></div><img src="assets/appstore/screen-1.jpg" alt="TERRAZ app explore"></div>
+        <div class="intro-stamp"><small>A NEW CHAPTER</small><strong>طراز</strong></div>
+      </div>
+      <div class="scroll-cue"><span>SCROLL</span><i></i></div>
+    </section>
+
+    <section class="scroll-world" id="story">
+      <div class="world-stage">
+        <div class="world-bg">
+          <figure class="bg bg-0 is-on"><img src="assets/editorial/product-02.webp" alt="Maroon abaya editorial"></figure>
+          <figure class="bg bg-1"><img src="assets/editorial/product-03.webp" alt="Maroon abaya editorial detail"></figure>
+          <figure class="bg bg-2"><img src="assets/editorial/product-04.webp" alt="Black abaya editorial"></figure>
+          <figure class="bg bg-3"><img src="assets/editorial/product-05.webp" alt="Black abaya editorial detail"></figure>
+          <div class="veil"></div>
+        </div>
+
+        <div class="world-copy">
+          <div class="scene-copy is-on" data-copy="0"><span>01 / 04</span><h2 data-i18n="s1_title">Curated,<br>not crowded.</h2><p data-i18n="s1_body">Selected stores, thoughtful pieces and less noise between you and what you came to find.</p></div>
+          <div class="scene-copy" data-copy="1"><span>02 / 04</span><h2 data-i18n="s2_title">The piece<br>comes first.</h2><p data-i18n="s2_body">A visual way to explore fashion, with product details kept close when you need them.</p></div>
+          <div class="scene-copy" data-copy="2"><span>03 / 04</span><h2 data-i18n="s3_title">Move through<br>it naturally.</h2><p data-i18n="s3_body">Categories, discovery and product views connect as one focused mobile experience.</p></div>
+          <div class="scene-copy" data-copy="3"><span>04 / 04</span><h2 data-i18n="s4_title">Designed<br>around mobile.</h2><p data-i18n="s4_body">TERRAZ is built to feel immediate in your hand — clear, visual and made for everyday browsing.</p></div>
+        </div>
+        <div class="world-device-wrap">
+          <div class="world-device phone-shell" data-tilt>
+            <div class="island"></div>
+            <img data-screen src="assets/appstore/screen-1.jpg" alt="TERRAZ app screen">
+          </div>
+          <div class="screen-label"><span data-i18n="screen_label">THE TERRAZ APP</span><b data-scene-label>HOME</b></div>
+        </div>
+
+        <div class="world-progress" aria-hidden="true"><i></i><span>01</span><span>02</span><span>03</span><span>04</span></div>
+        <div class="world-counter"><span>01</span><i>/</i><b>04</b></div>
+      </div>
+    </section>
+
+    <section class="interlude">
+      <p class="eyebrow" data-i18n="inter_kicker">NOT A CATALOGUE. A POINT OF VIEW.</p>
+      <h2 data-i18n="inter_title">A quieter way to<br>discover what fits you.</h2>
+      <p class="inter-body" data-i18n="inter_body">TERRAZ brings fashion, stores and product discovery together without making the experience feel busy.</p>
+    </section>
+
+    <section class="editorial-grid" aria-label="TERRAZ editorial">
+      <figure class="editorial tall reveal"><img src="assets/editorial/product-01.webp" alt="Maroon abaya"><figcaption><small>01</small><span data-i18n="cap1">The silhouette</span></figcaption></figure>
+      <figure class="editorial reveal"><img src="assets/editorial/product-04.webp" alt="Black abaya"><figcaption><small>02</small><span data-i18n="cap2">The essential</span></figcaption></figure>
+      <figure class="editorial reveal"><img src="assets/editorial/product-03.webp" alt="Maroon abaya detail"><figcaption><small>03</small><span data-i18n="cap3">The detail</span></figcaption></figure>
+    </section>
+    <section class="app-finale" id="app">
+      <div class="final-copy reveal">
+        <span class="kicker" data-i18n="final_kicker">TERRAZ ON IPHONE</span>
+        <h2 data-i18n="final_title">Your next find<br>starts here.</h2>
+        <p data-i18n="final_body">Explore TERRAZ on iPhone and move from discovery to product details in one place.</p>
+        <a class="appstore appstore-light" href="https://apps.apple.com/us/app/terraz/id6785586373?l" target="_blank" rel="noopener"><span class="apple"></span><span><small>Download on the</small><b>App Store</b></span></a>
+      </div>
+      <div class="device-stack reveal">
+        <div class="stack-phone back phone-shell"><div class="island"></div><img src="assets/appstore/screen-4.jpg" alt="TERRAZ categories"></div>
+        <div class="stack-phone front phone-shell"><div class="island"></div><img src="assets/appstore/screen-2.jpg" alt="TERRAZ product details"></div>
+      </div>
     </section>
   </main>
+
+  <footer>
+    <a class="footer-mark" href="#top"><img src="assets/terraz-logo.png" alt="TERRAZ"><span>TERRAZ</span></a>
+    <p data-i18n="footer_line">A new chapter of modest elegance.</p>
+    <div><a href="mailto:info@tryterraz.com">info@tryterraz.com</a><a href="https://partners.tryterraz.com/" data-i18n="nav_partners">Partners</a></div>
+    <small>© <span id="year"></span> TERRAZ</small>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
