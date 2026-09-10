@@ -12,6 +12,6 @@ window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}})},{threshold:.14});
 $$('.reveal').forEach(el=>observer.observe(el));
 const tilt=$('[data-tilt]'),zone=$('[data-tilt-zone]');
-if(tilt&&zone&&matchMedia('(pointer:fine)').matches){zone.addEventListener('pointermove',e=>{const r=zone.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5;const y=(e.clientY-r.top)/r.height-.5;tilt.style.transform=`translate(18%,-1%) perspective(1000px) rotateY(${x*7}deg) rotateX(${-y*5}deg) rotateZ(4deg)`});zone.addEventListener('pointerleave',()=>tilt.style.transform='translate(18%,-1%) rotate(4deg)')}
+if(tilt&&zone&&matchMedia('(pointer:fine)').matches){zone.addEventListener('pointermove',e=>{const r=zone.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5;const y=(e.clientY-r.top)/r.height-.5;tilt.style.transform=`perspective(1000px) rotateY(${x*7}deg) rotateX(${-y*5}deg) rotateZ(2deg)`});zone.addEventListener('pointerleave',()=>tilt.style.transform='rotate(2deg)')}
 applyLanguage('en');
 const year=$('#year');if(year)year.textContent=String(new Date().getFullYear());
